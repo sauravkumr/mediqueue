@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Mediqueue- Login</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+<style>
+    body{
+        background-color: white;
+        display:flex; 
+            flex-direction:column; 
+            justify-content:center;
+
+            align-content: center;
+    }
+    
+    .header{
+            display: flex;
+            align-self: center;
+            align-items: center;
+            position: relative;
+            width: 400px;
+        }
+        .header :first-child{
+            margin-right: auto;
+            /* background-color: red; */
+        }
+        .header :last-child{
+            margin-left: auto;
+            /* background-color: red; */
+        }
+
+    .limiter{
+        padding: 5px;
+        background-color: #EDEDED;
+        align-self: center;
+        width:300px;
+        height:500px;
+        border-radius: 20px;
+        box-shadow: 1px 5px 5px 0 #C0C0C0;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+    }
+
+    p{
+        font-family: 'Roboto', sans-serif;
+            /* font-weight: bold; */
+    }
+    .container-login100-form-btn{
+        display: flex;
+        
+    }
+    .signUp{
+        color: black;
+        color: #EA376B;
+    }
+
+    .checkIn{
+        font-size: 24px;
+    }
+    
+
+</style>
+
+
+</head>
+<body>
+	<div class="header">
+
+        <a href="/"><img src="../static/images/minilogo.png"></a>
+    
+        <a href="/login"><img src="../static/images/refresh.png" width="30" height="30"></a>
+    
+        </div> 
+
+
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="login100-more"></div>
+
+			<div class="wrap-login100 p-l-50 p-r-50 p-t-72 p-b-50">
+				<form class="login100-form validate-form" action = '/login' method="POST">
+					<span class="login100-form-title p-b-59">
+					 <p class="checkIn">Check in</p>
+					</span>
+
+					<div class="wrap-input100 validate-input" data-validate="First name is required">
+						<span class="label-input100"><p>First Name</p></span>
+						<input class="input100" type="text" name="first" placeholder="First name">
+						<span class="focus-input100"></span>
+                    </div>
+                    
+                    <div class="wrap-input100 validate-input" data-validate="Last name is required">
+						<span class="label-input100"><p>Last Name</p></span>
+						<input class="input100" type="text" name="last" placeholder="Last name">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="Healthcare provider?">
+						<span class="label-input100"><p> Provider</p></span>
+						<input class="input100" type="text" name="provider" placeholder="eg.Anthem,Blue Cross">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "What is your DOB?">
+						<span class="label-input100"><p>Date of Birth</p></span>
+						<input class="input100" type="date" name="birthday" placeholder="*************">
+						<span class="focus-input100"></span>
+					</div>
+
+					
+
+					<!-- <div class="flex-m w-full p-b-33">
+						<div class="contact100-form-checkbox">
+							<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+
+									<p>Remember me</p>
+									<a href="#" text decoration: none class="txt2 hov1">
+										
+									</a>
+						</div>
+
+						
+                    </div> -->
+                    <br>
+                    <br>
+                    <br>
+
+					<div class="container-login100-form-btn">
+						<div class="wrap-login100-form-btn">
+							<div class="login100-form-bgbtn"></div>
+                            <button class="login100-form-btn" button type="submit"  style="border-width: 0;">
+                                <a style= "text-decoration:none" href="/queues">
+                            
+                            <img src="../static/images/loginbutton.png" width="189" height="60">
+                            
+                            </button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>

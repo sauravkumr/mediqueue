@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mediqueue - Queue</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <style>
+        p{
+            font-family: 'Roboto', sans-serif;
+            /* font-weight: bold; */
+        }
+        body{
+            background-color: white;
+            /* display: ; */
+            display:flex; 
+            flex-direction:column; 
+            justify-content:center;
+
+            align-content: center;
+        }
+        .queueBigBox{
+            background-color: #EDEDED;
+            align-self: center;
+            width:300px;
+            height:500px;
+            border-radius: 20px;
+            box-shadow: 1px 5px 5px 0 #C0C0C0;
+            position: relative;
+            display: flex;
+            /* padding-top: 50px; */
+        }
+        .queueBigBox img:first-child{
+            /* background-color: red; */
+            /* margin-left: auto; */
+            position: relative;
+            align-self: center;
+
+            margin-right: auto;
+            margin-bottom: auto;
+            padding-top: 10px;
+        }
+        .queueBigBox div{
+            background-color: white;
+            vertical-align: center;
+            width:200px;
+            height:300px;
+            border-radius: 10px;
+
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: auto;
+            margin-top: auto;
+            /* display: flex; */
+            /* align-items: center; */
+            position: relative;
+            text-align: center;
+            /* display: flex; */
+            justify-content: center;
+        }
+
+        .queueNumber{
+            font-size: 96px;
+        }
+        .header{
+            display: flex;
+            align-self: center;
+            align-items: center;
+            position: relative;
+            width: 400px;
+        }
+        .header :first-child{
+            margin-right: auto;
+            /* background-color: red; */
+        }
+        .header :last-child{
+            margin-left: auto;
+            /* background-color: red; */
+        }
+        h3{
+            position: relative;
+            left: 40%;
+        }
+    </style>
+    <div class="header">
+
+    <a href="/"><img src="../static/images/minilogo.png"></a>
+
+    <a href="/queues"><img src="../static/images/refresh.png" width="30" height="30"></a>
+    
+    </div>    
+    <br>
+    <h3>Hey {{name}}, you are...</h3>
+    <div class="queueBigBox">
+        <!-- <img src="../images/textlogosmall.png"> -->
+        <div>
+            <p class="queueNumber">
+                <!-- PUT THE NUMBER IN LINE HERE -->
+                #{{spot}}
+            </p>
+            {% if total_infront == 0: %}
+                <p>Your turn is up!</p>
+            {% else: %}
+                <p> 
+                    <!-- PUT THE NUMER OF PPL AHEAD OF THE PERSON HERE -->
+                
+                {{total_infront}} ahead of you...</p> 
+            {% endif %}
+        </div>
+        
+    </div>
+    <br>
+    <br>
+    <a href="/leave" style="align-self: center;"><img src="../static/images/Leave.png" width="189" height="60"></a>
+
+</body>
+</html>

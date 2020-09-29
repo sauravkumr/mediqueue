@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mediqueue - Home</title>
+	<style>
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+
+		/* Center the image and position the close button */
+		.imgcontainer {
+			text-align: center;
+			margin: 24px 0 12px 0;
+			position: relative;
+		}
+
+		img.avatar {
+			width: 90%;
+		}
+
+		.container {
+			padding: 16px;
+			margin: auto;
+			width: 50%;
+			padding: 10px;
+		}
+
+		span.psw {
+			float: right;
+			padding-top: 16px;
+		}
+
+		/* Add Zoom Animation */
+		.animate {
+			-webkit-animation: animatezoom 0.6s;
+			animation: animatezoom 0.6s
+		}
+
+		@-webkit-keyframes animatezoom {
+			from {
+				-webkit-transform: scale(0)
+			}
+
+			to {
+				-webkit-transform: scale(1)
+			}
+		}
+
+		@keyframes animatezoom {
+			from {
+				transform: scale(0)
+			}
+
+			to {
+				transform: scale(1)
+			}
+		}
+
+		/* Change styles for span and cancel button on extra small screens */
+		@media screen and (max-width: 300px) {
+			span.psw {
+				display: block;
+				float: none;
+			}
+
+			.cancelbtn {
+				width: 100%;
+			}
+		}
+
+	</style>
+</head>
+
+<body>
+
+	<form class="animate" style="width : 400px; overflow: auto; display: block;
+  margin-left: auto;
+  margin-right: auto;
+" action="/action_page.php" method="post">
+		<div class="imgcontainer">
+			<img src="https://cdn.discordapp.com/attachments/759472320145391649/759508004684693614/biglogo.png" alt="Avatar" class="avatar">
+		</div>
+
+		<div class="imgcontainer">
+			<img src="https://cdn.discordapp.com/attachments/759472320145391649/759508086468771920/queueirlimage.png" alt="Avatar" class="avatar">
+		</div>
+
+
+
+		<div class="imgcontainer">
+			<label><b>Welcome to MediQueue, <br> your virtual hospital queue!</b></label>
+		</div>
+
+		<div class="imgcontainer">
+			<a href="/login" ><img   style="width:50%;" src="https://cdn.discordapp.com/attachments/759472320145391649/759507960342249492/getstarted.png" alt="Avatar" class="avatar"></a>
+		</div>
+
+
+	</form>
+
+
+
+</body>
+
+</html>
